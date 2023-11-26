@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Viola</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="image/favicon.ico">
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var video = document.getElementById('header-video');
+            video.addEventListener('ended', function() {
+                // ビデオが終了したら再生を停止
+                video.pause();
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <video autoplay muted id="header-video">
+            <source src="image/hpheader.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="header-content">
+            <h1></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About Us.html">About Us</a></li>
+                    <li><a href="Supporter.html">Supporter</a></li>
+                    <li><a href="Team.html">Team</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <section class="about">
+            <h2>クランについて</h2>
+            <p>私たちは千葉県を拠点として活動するeスポーツチームです。</p>
+        </section>
+
+        <section class="news">
+            <h2>最新ニュース</h2>
+            <!-- ニュース項目を追加 -->
+            <article>
+                <h3>ニュースタイトル1</h3>
+                <p>ニュース内容1</p>
+            </article>
+            <!-- 他のニュース項目を追加可能 -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Viola Esports Team</p>
+    </footer>
+</body>
+</html>
